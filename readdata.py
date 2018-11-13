@@ -29,10 +29,6 @@ word_counts = Counter(cap_words) #counts the number each time a word appears
 print(word_counts)
 most_common,num_most_common = Counter(word_counts).most_common(1)[0]
 
-top_words = word_counts[0:5]
-for i in top_words:
-    print(top_words[i])
-
 #print(data.at[0, 'thread_title'])
 #article_title = data.at[0, 'thread_title']
 #print(article_title)

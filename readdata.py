@@ -12,8 +12,8 @@ data = pd.read_csv("fake-cleaned.csv")
 
 #Loop through article titles and concatenate into one big string
 article_text = ""
-for i in range(0, 50):
-    current_text = str(data.at[i, 'text']) #Define the column here
+for i in range(0, 13000):
+    current_text = str(data.at[i, 'thread_title']) #Define the column here
     article_text = article_text + " " + current_text
 
 words = re.findall(r'\w+', article_text) #This finds words in the document
